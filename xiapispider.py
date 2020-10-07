@@ -59,7 +59,7 @@ class XiaPi(object):
         for i in range(0,page*50,50):
             url = self.url.format(word,i,max_price,min_price)
             self.one_html(url)
-            time.sleep(5)
+            time.sleep(5)#设置间隔时间
         end = time.time()
         spend = end-start
         minutes = int(spend // 60)
